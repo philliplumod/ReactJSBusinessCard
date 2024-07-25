@@ -1,0 +1,139 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", Helvetica, sans-serif;
+}
+
+.Card {
+  display: flex;
+  width: 34.375rem;
+  padding: 2.75rem 7.25rem;
+  flex-direction: column;
+  align-items: flex-start;
+  background: #23252C;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: .8em; /* Space between child elements */
+  background-color: #f9f9f9;
+  margin: 0;
+}
+
+.user-details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-self: stretch;
+  padding: 1.25rem 1.25rem;
+}
+
+.user-details > .user-name,
+.user-details > .user-position,
+.user-details > .user-link {
+  margin: 0;
+  padding: 0.125em;
+}
+
+.user-details > .user-name {
+  color: #2b283a;
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+
+.user-details > .user-position {
+  color: #F47D27;
+  font-size: 0.8rem;
+  font-weight: 400;
+}
+
+.user-details > .user-link {
+  color: #4A4E74;
+  font-size: 0.64rem;
+}
+
+.btns {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1.25rem 1.25rem;
+  width: 100%; /* Ensure the button container takes the full width */
+  flex-direction: row; /* Stack buttons vertically */
+  margin: 0; /* Remove any default margin */
+  padding-bottom: 0; /* Remove padding at the bottom if necessary */
+}
+
+.btn-email, .btn-linkedin {
+  border-radius: 0.5rem;
+  padding: 0.5rem 0.8rem;
+  gap: 0.5rem;
+  width: 100%; /* Ensure buttons take the full width of the parent */
+  max-width: 20rem; /* Optional: Limit the button width */
+  box-sizing: border-box; /* Include padding in the width calculation */
+  text-align: center; /* Center the text inside the buttons */
+  border: 1px solid var(--gray-300, #D1D5DB);
+  font-size: 0.8rem;
+}
+
+.btn-email {
+  background: var(--white, #FFF);
+}
+
+.btn-linkedin {
+  background-color: #297fe4;
+  color: #fff;
+}
+
+.card-content {
+  position: relative;
+  padding: 1.25rem;
+  border: 1px solid #D1D5DB;
+  margin: 0; /* Remove any default margin */
+} 
+
+.card-content > p {
+  color: #4A4E74;
+  font-size: 0.75rem;
+  line-height: 150%;
+  text-align: justify;
+}
+
+.card-content > h2 {
+  color: #2B283A;
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 150%;
+  margin-top: 1.25rem;
+}
+
+footer {
+  color: white;
+  background-color: #D5D4D8;
+  margin: 0;
+  border-radius: 0 0 0.625rem 0.625rem;
+  overflow: hidden;
+}
+
+footer > ul {
+  display: flex;
+  justify-content: center;
+  gap: 1em;
+  padding: 1em;
+  list-style: none;
+  color: #918E9B;
+  margin: 0;
+}
+
+header {
+  height: 18.75em;
+  background-color: #F47D27;
+  border-radius: 0.625rem 0.625rem 0rem 0rem;
+  overflow: hidden;
+  background-image: url('./assets/0a4be9a6eaf565103fc6e2c325f3838a.png');
+  background-size: cover; 
+  background-repeat: no-repeat;
+}
+
